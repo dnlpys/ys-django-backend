@@ -4,7 +4,7 @@
 
 FROM python:3.11-alpine3.19
 
-LABEL maintainer='seopftware'
+LABEL maintainer='ys'
 
 # python 0:1 = False:True
 # 컨테이너에 찍히는 로그를 볼 수 있도록 허용한다.
