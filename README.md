@@ -1,9 +1,13 @@
 # ys-django-backend
 
-
-## docker settings
+## docker build
 > docker build .
-> docker-compose build
+> docker compose build
 
-## 장고 세팅
-> docker-compose run --rm app sh -c "django-admin startproject app ."
+## django setting
+> docker compose run --rm app sh -c "django-admin startproject app ."
+
+## create admin user 
+> docker compose run --rm app sh -c "python manage.py migrate"
+> docker compose run --rm app sh -c "python manage.py createsuperuser"
+
